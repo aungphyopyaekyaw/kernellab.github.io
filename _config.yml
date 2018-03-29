@@ -1,4 +1,4 @@
-title: kernellab dot site
+title: kernellab.site
 email: webmaster@kernellab.site
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -11,7 +11,7 @@ github_username:  aungphyopyaekyaw
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-architect
+theme: minima
 plugins:
   - jekyll-feed
 
