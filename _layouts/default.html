@@ -2,72 +2,14 @@
 <html>
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-
     {% include meta.html %}
-
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
-    <!-- <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" /> -->
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/plugins/bootstrap/css/bootstrap.min.css">   
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/plugins/font-awesome/css/font-awesome.css">
     <link id="theme-style" rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
   </head>
-
-  <body>
-      <header id="header" class="header">  
-          <div class="container">       
-              <h1 class="logo">
-                  <a class="scrollto" href="#hero">
-                      <span class="logo-icon-wrapper"><img class="logo-icon" src="{{ site.baseurl }}/assets/images/logo-icon.svg" alt="icon"></span>
-                      <span class="text"><span class="highlight">APP</span>KIT</span></a>
-              </h1><!--//logo-->
-              <nav class="main-nav navbar-right" role="navigation">
-                  <div class="navbar-header">
-                      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
-                          <span class="sr-only">Toggle navigation</span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                      </button><!--//nav-toggle-->
-                  </div><!--//navbar-header-->
-                  <div id="navbar-collapse" class="navbar-collapse collapse">
-                      <ul class="nav navbar-nav">
-                          <li class="active nav-item"><a class="scrollto" href="#about">About</a></li>
-                          <li class="nav-item"><a class="scrollto" href="#testimonials">Testimonials</a></li>
-                          <li class="nav-item"><a class="scrollto" href="#features">Features</a></li>                        
-                          <li class="nav-item"><a class="scrollto" href="#team">Team</a></li>
-                          <li class="nav-item"><a class="scrollto" href="#pricing">Pricing</a></li>
-                          <li class="nav-item"><a class="scrollto" href="#contact">Contact</a></li>
-                      </ul><!--//nav-->
-                  </div><!--//navabr-collapse-->
-              </nav><!--//main-nav-->                     
-          </div><!--//container-->
-      </header><!--//header-->
-
     {{ content }}
-
-    <div id="contact" class="contact-section">
-        <div class="container text-center">
-            <h2 class="section-title">Contact Us</h2>
-            <div class="contact-content">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.</p>
-            </div>
-        </div><!--//container-->
-    </div><!--//contact-section-->
-    <footer class="footer text-center">
-        <div class="container">
-            <small class="copyright">Designed by <a href="http://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley |</a> Powered by <a href="https://kernellab.site">kernellab.site</a>.</small>
-        </div><!--//container-->
-    </footer>
-
-    <script type="text/javascript" src="{{ site.baseurl }}/assets/plugins/jquery-1.12.3.min.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl }}/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl }}/assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>     
-    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/main.js"></script> 
-    {% include analytics.html %}
   </body>
 </html>
